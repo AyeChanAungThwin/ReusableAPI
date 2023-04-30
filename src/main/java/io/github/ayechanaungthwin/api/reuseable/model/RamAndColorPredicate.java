@@ -16,7 +16,6 @@ public class RamAndColorPredicate implements Predicate<Long, Product> {
     public boolean isMatched(Product product) {
     	boolean foundRAM = ramPredicate.isMatched(product);
     	boolean foundColor = colorPredicate.isMatched(product);
-    	
         return foundRAM&&foundColor;
     }
 }
